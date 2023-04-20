@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
-  * main - Entry point for UNIX quote
-  * Return: 1 means (success)
+  * main - Entry point
+  * Return: 1 (success)
   */
 int main(void)
 {
