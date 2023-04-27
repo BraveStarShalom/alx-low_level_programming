@@ -5,14 +5,11 @@
   * multiply - multiples two integers
   * @a: First integer
   * @b: Second integer
-  * Return: 0 is sucess
+  * Return: mul of a and b
   */
-
 int mul(int a, int b)
 {
-	int c;
-
-	c = a * b;
+	int c = a * b;
 
 	return (c);
 }
