@@ -1,32 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
-  * main - Entry point
+  * main - entry point
   *
-  * Description: prints the numbers 1 to 100, but
-  * for multiples of 3, print Fizz,
-  * for multiples of 5, print Buzz, and
-  * multiples of both 3 and 5, print FizzBuzz
+  * Description: prints the numbers 1 to 100, with
+  * Fizz for multiples of 3, Buzz for multiples of 5, and
+  * FizzBuzz for multiples of both 3 and 5
   *
-  * Return: Always 0 success
+  * Return: Always 0
   */
-
 int main(void)
 {
-	int p;
+	int i;
 
-	for (p = 1; p <= 100; p++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (p % 3 == 0)
-			printf("Fizz");
-		else if (p % 5 == 0)
-			printf("Buzz");
-		else if (p % 15 == 0)
+		if (i % 15 == 0)
 			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
 		else
-			printf("%d", p);
-		if (p < 100)
+			printf("%i", i);
+		if (i < 100)
 			printf(" ");
 	}
 	printf("\n");
