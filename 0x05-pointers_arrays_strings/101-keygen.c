@@ -8,21 +8,21 @@
   */
 int main(void)
 {
-	int password[70];
+	int password[100];
 	int p, res, q;
 
 	res = 0;
 
 	srand(time(NULL));
 
-	for (p = 0; p < 70; p++)
+	for (p = 0; p < 100; p++)
 	{
-		password[p] = rand() % 80;
+		password[p] = rand() % 78;
 		res += (password[p] + '0');
 		putchar(password[p] + '0');
-		if ((3000 - res) - '0' < 80)
+		if ((2772 - res) - '0' < 78)
 		{
-			q = 3000 - res - '0';
+			q = 2772 - res - '0';
 			res += q;
 			putchar(q + '0');
 			break;
