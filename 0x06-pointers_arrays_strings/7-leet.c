@@ -7,23 +7,23 @@
   */
 char *leet(char *s)
 {
-	int p = 0;
+	int r = 0;
 	int q;
 	int ll[] = {98, 101, 111, 116, 108};
 	int upl[] = {65, 69, 79, 84, 76};
 	int num[] = {52, 51, 48, 55, 49};
 
-	while (*(s + p) != '\0')
+	while (*(s + r) != '\0')
 	{
 		for (q = 0; q < 5; q++)
 		{
-			if (*(s + p) == ll[q] || *(s + p) == upl[q])
+			if (*(s + r) == ll[q] || *(s + r) == upl[q])
 			{
-				*(s + p) = num[q];
+				*(s + r) = num[q];
 				break;
 			}
 		}
-	p++
+	r++;
 	}
 	return (s);
 }
