@@ -20,7 +20,7 @@ char *cap_string(char *s)
 			if (*(s + p) == sep_words[q])
 			{
 				if ((*(s + (p + 1)) >= 97) && (*(s + (p + 1)) <= 122))
-					*(s + p + 1)) = *(s + (p + 1)) - 32;
+					*(s + (p + 1)) = *(s + (p + 1)) - 32;
 				break;
 			}
 		}
