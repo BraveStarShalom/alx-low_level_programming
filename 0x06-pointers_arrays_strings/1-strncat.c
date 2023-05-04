@@ -9,8 +9,10 @@
   */
 char *_strncat(char *dest, char *src, int n)
 {
-	int p = 0;
+	int p;
 	int q;
+
+	p = 0;
 
 	while (des[p] != '\0')
 	{
