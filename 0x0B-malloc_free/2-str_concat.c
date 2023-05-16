@@ -29,6 +29,12 @@ char *str_concat(char *s1, char *s2)
 	p = q = 0;
 	while (s1[p] != '\0')
 	{
+		cctt[p] = s1[p];
+		p++;
+	}
+
+	while (s2[q] != '\0')
+	{
 		cctt[p] = s2[q];
 		p++, q++;
 	}
