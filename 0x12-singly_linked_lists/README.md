@@ -4,9 +4,6 @@
 # Concept:
 	# Data Structures
 
-# Author:
-	# Peace E. A. Adzaho
-
 # Requirements:
 	Task 0
 	Write a function that prints all the elements of a list_t list.
