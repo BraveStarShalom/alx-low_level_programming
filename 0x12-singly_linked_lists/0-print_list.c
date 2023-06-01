@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_list - prints elements of a list that is linked.
  * @h: points to linked list.
@@ -16,8 +17,10 @@ size_t print_list(const list_t *h)
 
 		else
 			printf("[%d] %s\n", h->len, h->str);
+
 		peace++;
 		h = h->next;
 	}
+
 	return (peace);
 }
