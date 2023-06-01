@@ -2,22 +2,22 @@
 /**
  * print_list - prints elements of a list that is linked.
  * @h: points to linked list.
- * Return: Number of elements to print.
+ * Return: Number of nodes.
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t p;
+	size_t peace = 0;
 
-	p = 0;
-	while (h != NULL)
+	while (h)
 	{
 		if (h->str == NULL)
-			printf("[%d] %s\n", 0, "(nil)");
+			printf("[0] (nil)\n");
+
 		else
 			printf("[%d] %s\n", h->len, h->str);
+		peace++;
 		h = h->next;
-		p++;
 	}
-	return (p);
+	return (peace);
 }
