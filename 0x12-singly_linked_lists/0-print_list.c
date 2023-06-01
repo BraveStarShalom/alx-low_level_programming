@@ -6,12 +6,9 @@
   * @h: The list_t list pointer
   * Return: Number of nodes.
   */
-
 size_t print_list(const list_t *h)
 {
-	size_t peace;
-
-	peace = 0;
+	size_t peace = 0;
 
 	while (h)
 	{
